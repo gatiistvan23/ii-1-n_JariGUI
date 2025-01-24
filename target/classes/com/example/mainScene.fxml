@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+   <children>
+      <TextField fx:id="plateField" layoutX="213.0" layoutY="52.0" />
+      <TextField fx:id="brandField" layoutX="213.0" layoutY="90.0" />
+      <TextField fx:id="yearField" layoutX="213.0" layoutY="125.0" />
+      <TextField fx:id="fuelField" layoutX="213.0" layoutY="159.0" />
+      <TextField fx:id="priceField" layoutX="213.0" layoutY="194.0" />
+      <TextField fx:id="climateField" layoutX="213.0" layoutY="230.0" />
+      <TextField fx:id="certField" layoutX="213.0" layoutY="267.0" />
+      <Label layoutX="140.0" layoutY="56.0" text="Rendszám:" />
+      <Label layoutX="140.0" layoutY="94.0" text="Márka:" />
+      <Label layoutX="140.0" layoutY="129.0" text="Év:" />
+      <Label layoutX="140.0" layoutY="163.0" text="Üzemanyag:" />
+      <Label layoutX="140.0" layoutY="198.0" text="Ár:" />
+      <Label layoutX="140.0" layoutY="234.0" text="Klíma:" />
+      <Label layoutX="140.0" layoutY="271.0" text="Lejár:" />
+      <Button layoutX="142.0" layoutY="331.0" mnemonicParsing="false" onAction="#onClickBackButton" text="Előző" />
+      <Button layoutX="229.0" layoutY="331.0" mnemonicParsing="false" onAction="#onClickNextButton" text="Következő" />
+      <Button layoutX="350.0" layoutY="331.0" mnemonicParsing="false" onAction="#onClickSaveButton" text="Mentés" />
+   </children>
+</Pane>
