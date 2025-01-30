@@ -1,3 +1,4 @@
+rendszám:márka:év:üzemanyag:ár:klíma:műszaki
 DEC-834:Honda:2008:benzin:1200000:1:2023-01-05
 GBD-924:Peugeot:2007:benzin:870000:0:2022-12-04
 EVZ-248:Renault:2009:dízel:975000:1:2022-05-01

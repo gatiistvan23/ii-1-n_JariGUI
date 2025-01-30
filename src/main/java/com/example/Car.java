@@ -3,6 +3,8 @@ package com.example;
 import java.time.LocalDate;
 
 public class Car {
+    @SuppressWarnings("unused")
+    private Integer id;
     private String plate;
     private String brand;
     private Integer year;
@@ -13,7 +15,8 @@ public class Car {
     
     public Car() {}
 
-    public Car(String plate, String brand, Integer year, String fuel, Double price, Boolean climate, LocalDate cert) {
+    public Car( String plate, String brand, Integer year, String fuel, Double price, Boolean climate, LocalDate cert) {
+        
         this.plate = plate;
         this.brand = brand;
         this.year = year;
@@ -21,7 +24,8 @@ public class Car {
         this.price = price;
         this.climate = climate;
         this.cert = cert;
-    }
+    }   
+
 
     public String getPlate() {
         return plate;
@@ -77,10 +81,7 @@ public class Car {
 
     public void setCert(LocalDate cert) {
         this.cert = cert;
-    }
-
-    
-    
+    }      
 
 
 }

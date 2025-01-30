@@ -23,8 +23,8 @@ public class Solution {
     public ArrayList<Car> tryFileToList() throws FileNotFoundException {   
         
         File file = new File("jaribt.txt");
-        Scanner sc = new Scanner(file);
-        //sc.nextLine();
+        Scanner sc = new Scanner(file, "utf8");
+        sc.nextLine();
         while(sc.hasNext()) {
             String line = sc.nextLine();
 

@@ -1,5 +1,6 @@
 package com.example;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import javafx.event.ActionEvent;
@@ -44,8 +45,15 @@ public class MainController {
         showCar(0);
     }
 
-    private void showCar(int index) {        
+    private void showCar(int index) {  
+            Car car = carList.get(index);      
             this.brandField.setText(carList.get(index).getBrand());
+            this.certField.setText(car.getCert().toString());
+            this.climateField.setText(car.getClimate().toString());
+            this.fuelField.setText(car.getFuel());
+            this.plateField.setText(car.getPlate());
+            this.priceField.setText(car.getPrice().toString());
+            this.yearField.setText(car.getYear().toString());
     }
 
     @FXML
@@ -66,10 +74,20 @@ public class MainController {
     }
     
 
+    
     @FXML
     void onClickSaveButton(ActionEvent event) {
-        
-        
+        System.out.println("mentés...");
+        DataSource ds = new DataSource();
+        Car car = new Car(
+            this.plateField.getText(),
+            this.brandField.getText(),          
+            Integer.parseInt(this.yearField.getText()),
+            this.fuelField.getText(),            
+            Double.parseDouble(this.priceField.getText()),
+            Boolean.parseBoolean(this.climateField.getText()), 
+            LocalDate.parse(this.certField.getText())); 
+        ds.addCar(car);   
     }
 
 }
